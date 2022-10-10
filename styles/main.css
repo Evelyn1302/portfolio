@@ -1,0 +1,186 @@
+*{
+    font-family: "Courgette";
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(to top left, rgb(167, 214, 118), rgb(249, 226, 174));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+.header_name{
+    position: fixed;
+    color: black;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.description{
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+    overflow-y: auto;
+}
+
+.container{
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about,
+.projects,
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.55);
+
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+
+    padding: 3vh, 0px;
+
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.about_active,
+.projects_active,
+.contact_active{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    background-color: rgba(255, 255, 255, 0.55);
+
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 500ms;
+}
+
+.about_active .about_title,
+.projects_active .projects_title,
+.contact_active .contact_title{
+    text-decoration: underline;
+}
+
+.about_content,
+.projects_content,
+.contact_content{
+    width: 95%;
+    font-family: "Arial";
+}
+
+.projects_content,
+.contact_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.pc_div{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    margin: 0px 0px 2.5% 0px;
+}
+
+.pc_pic{
+    width: 100%;
+}
+
+.pc_title{
+    font-family: "Arial";
+    font-weight: 600;
+}
+
+.pc_text{
+    font-family: "Arial";
+}
+
+.pc_link{
+    color: black;
+    text-decoration: none;
+}
+
+.material-icons{
+    padding: 0px;
+    margin: 0px;
+}
+
+.cc_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    width: 100%;
+    height: 3.5em;
+}
+
+.cc_icon_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+    padding: 0px;
+}
+
+.git_icon{
+    width: 3rem;
+    height: 3rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.cc_text_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    width: 75%;
+    height: 3.5rem;
+    padding: 0px;
+    margin: 1%;
+}
+
+.cc_link{
+    color: black;
+    font-family: "Arial";
+    font-size: 1em;
+    text-decoration: none;
+}

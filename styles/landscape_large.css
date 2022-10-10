@@ -1,0 +1,100 @@
+/*
+    Stylesheet for landscape view, vh < 600px
+*/
+
+.header_name{
+    top: 5vh;
+    height: 15vh;
+}
+
+.capital{
+    font-size: 5rem;
+}
+
+.small{
+    font-size: 3.5rem;
+}
+
+.description{
+    top: 20vh;
+    font-size: 175%;
+
+    width: 70vw;
+    height: 15vh;
+    max-height: 15vh;
+}
+
+.container{
+    bottom: 5vh;
+
+    flex-direction: row;
+
+    width: 70vw;
+    height: 55vh;
+}
+
+.about,
+.projects,
+.contact{
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    margin: 0px 2.5%;
+}
+
+.about_active,
+.projects_active,
+.contact_active{
+    width: 80%;
+    height: 100%;
+    padding: 3vh, 0px;
+    margin: 0px 1%;
+}
+
+.about .about_title,
+.projects .projects_title,
+.contact .contact_title{
+    font-size: 180%;
+    font-weight: 600;
+}
+
+.about_active .about_title,
+.projects_active .projects_title,
+.contact_active .contact_title{
+    font-size: 180%;
+    margin: 1vh 2vh 1vh 2vh;
+}
+
+.about_content,
+.projects_content,
+.contact_content{
+    font-size: 130%;
+    margin: 0px 2.5% 1vh 2.5%;
+}
+
+.pc_div{
+    flex-direction: row;
+}
+
+.pc_pic_div,
+.pc_text_div{
+    width: 48%;
+    margin: 1% 1%;
+}
+
+.pc_title{
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
+}
+
+.pc_text{
+    font-size: 1em;
+}
+
+.cc_div{
+    align-items: start;
+}
+
+.cc_icon_div{
+    margin: 1% 1% 1% 5%;
+}
