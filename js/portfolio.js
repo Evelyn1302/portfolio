@@ -305,7 +305,7 @@ function _create_link_html(contact){
         return '<a class="cc_link" href="https://github.com/Evelyn1302" target="_blank">Github Profile</a>';
     }
     else if (contact == "description"){
-        return '<a class="cc_link" href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:63045f2b-461a-3004-b40b-75f296075e2f" \
+        return '<a class="cc_link" href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b50dff88-7198-3620-9e6a-b644178e6bcc" \
         target="_blank">Curriculum Vitae / Resume</a>';
     }
 }
