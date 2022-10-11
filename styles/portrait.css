@@ -8,16 +8,16 @@
 }
 
 .capital{
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 .small{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .description{
     top: 14vh;
-    font-size: 150%;
+    font-size: 120%;
 
     width: 80vw;
     height: 16vh;
@@ -54,21 +54,21 @@
 .about .about_title,
 .projects .projects_title,
 .contact .contact_title{
-    font-size: 200%;
+    font-size: 160%;
     font-weight: 600;
 }
 
 .about_active .about_title,
 .projects_active .projects_title,
 .contact_active .contact_title{
-    font-size: 200%;
+    font-size: 160%;
     margin: 0px 2vh 1vh 2vh;
 }
 
 .about_content,
 .projects_content,
 .contact_content{
-    font-size: 130%;
+    font-size: 104%;
     margin: 0px 2vh 1vh 2vh;
 }
 
