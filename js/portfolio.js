@@ -152,7 +152,7 @@ function _about_content(){
     about_content_div.classList.add("about_content");
     about_content_div.id = "about_content";
 
-    about_content_div.innerText = "First of all, welcome to this page, where you will find all of my projects to date." + "\n\n" +
+    about_content_div.innerText = "First of all, welcome to this page, where you will find all of my web development projects to date." + "\n\n" +
                                   "I am a graduate from University of Southampton with a Second Upper Class Honours Master's \
                                   Degree for the programme MEng Mechanical Engineering with Acoustical Engineering." + "\n\n" +
                                   "I discovered that I enjoy doing codings and to deal with some designing work during my study \
