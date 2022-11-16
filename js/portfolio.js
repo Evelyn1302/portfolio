@@ -156,7 +156,7 @@ function _about_content(){
                                   "I am a graduate from University of Southampton with a Second Upper Class Honours Master's \
                                   Degree for the programme MEng Mechanical Engineering with Acoustical Engineering." + "\n\n" +
                                   "I discovered that I enjoy doing codings and to deal with some designing work during my study \
-                                  in the University. Hence, I self-taught web development, starting from the HTML and CSS, followed by Javscript.";
+                                  in the University. Hence, I self-taught web development, starting from the HTML and CSS, followed by Javscript, PHP and some basics of MySQL.";
 
     about.appendChild(about_content_div);
 }
@@ -166,11 +166,13 @@ function _projects_content(){
     projects_content_div.classList.add("projects_content");
     projects_content_div.id = "projects_content";
 
-    let pc_login_div = _create_projects_details("login");
+    let pc_product_list_div = _create_projects_details("product_list");
     let pc_metronome_div = _create_projects_details("metronome");
+    let pc_login_div = _create_projects_details("login");
 
-    projects_content_div.appendChild(pc_login_div);
+    projects_content_div.appendChild(pc_product_list_div);
     projects_content_div.appendChild(pc_metronome_div);
+    projects_content_div.appendChild(pc_login_div);
     projects.appendChild(projects_content_div);
 }
 
@@ -213,6 +215,10 @@ function _create_projects_details(project){
         link_pic.href = "https://evelyn1302.github.io/metronome/";
         link_title.href = "https://evelyn1302.github.io/metronome/";
     }
+    else if(project == "product_list"){
+        link_pic.href = "https://sw-jwd-elc.000webhostapp.com/";
+        link_title.href = "https://sw-jwd-elc.000webhostapp.com/"
+    }
     link_title.classList.add("pc_link");
 
     pic.src = `styles/${project}.png`;
@@ -246,6 +252,9 @@ function _create_project_title(project){
     else if (project == "metronome"){
         title = "Metronome";
     }
+    else if (project == "product_list"){
+        title = "Editable Product List";
+    }
 
     return title;
 }
@@ -255,12 +264,18 @@ function _create_project_text(project){
 
     if (project == "login"){
         text = "Login page with username and password input fields. The page also has a responsive virtual \
-                keyboard with three keys layouts which could be used for typing on the page.";
+                keyboard with three keys layouts which could be used for typing on the page. \
+                Created using HTML, CSS and JavaScript.";
     }
     else if (project == "metronome"){
         text = "Online metronome with changable beats per minute (b.p.m.), ranging from 30 to 180. \
                 The metronome by default counts four crochets beats per bar. Four note lengths (crochet, \
-                quaver, semi-quaver and triplets) are available.";
+                quaver, semi-quaver and triplets) are available. Created using HTML, CSS and JavaScript.";
+    }
+    else if (project == "product_list"){
+        text = "Editable product list with the options to mass delete and add products. The form on the product add page is dynamic. \
+                Entries to the form are to be sanitised and validated before they are inserted into the database. \
+                Created using HTML, CSS, JavaScript, PHP and MySQL."
     }
 
     return text;
