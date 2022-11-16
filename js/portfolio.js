@@ -181,13 +181,15 @@ function _contact_content(){
 
     let cc_mail_div = _create_contact_details("mail");
     let cc_phone_div = _create_contact_details("phone");
-    let cc_git_div = _create_contact_details("github");
     let cc_cv_div = _create_contact_details("description");
+    let cc_git_div = _create_contact_details("github");
+    let cc_codepen_div = _create_contact_details("codepen");
     
     contact_content_div.appendChild(cc_mail_div);
     contact_content_div.appendChild(cc_phone_div);
-    contact_content_div.appendChild(cc_git_div);
     contact_content_div.appendChild(cc_cv_div);
+    contact_content_div.appendChild(cc_git_div);
+    contact_content_div.appendChild(cc_codepen_div);
     contact.appendChild(contact_content_div);
 }
 
@@ -275,6 +277,12 @@ function _create_contact_details(contact){
         icon.classList.add("git_icon");
         icon_div.appendChild(icon);
     }
+    else if (contact == "codepen"){
+        let icon = document.createElement('img');
+        icon.src = "styles/codepen_logo.webp";
+        icon.classList.add("codepen_icon");
+        icon_div.appendChild(icon);
+    }
     else {
         icon_div.innerHTML = _create_icon_google(contact);
     }
@@ -307,5 +315,8 @@ function _create_link_html(contact){
     else if (contact == "description"){
         return '<a class="cc_link" href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b50dff88-7198-3620-9e6a-b644178e6bcc" \
         target="_blank">Curriculum Vitae / Resume</a>';
+    }
+    else if (contact =="codepen"){
+        return '<a class="cc_link" href="https://codepen.io/evelyn1302" target="_blank">Codepen Profile</a>';
     }
 }
